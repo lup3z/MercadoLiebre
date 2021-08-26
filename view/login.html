@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a0f8081e82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="./img/logo-mercado-liebre.svg" class="logo">
+            <div>
+            <input type="text" value="Buscar productos, marcas" class="buscador">
+            <button class="buscador"><i class="fas fa-search"></i></button>
+        </div>
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+        <a href="#" class="hamburguer-button">
+            <i class="fas fa-bars"></i>
+        </a>
+    </header>
+    <main>
+        <form action="/login" method="POST" class="formulario-login">
+            <div class="login-formulario">
+            <label for="Nombre">Nombre de usuari@:</label>
+            <input type="text" name="nombre" id="nombre" class="login">
+            <span class="feedback"></span>
+        </div>
+            <div class="login-formaulario">
+            <label for="password">Ingrese contraseña:</label>
+            <input type="password" name="password" id="password" class="login">
+            <span class="feedback"></span>
+        </div>
+            <button type="submit" class="boton-login">Enviar</button>
+    </main>
+</body>
+</html>

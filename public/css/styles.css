@@ -10,9 +10,17 @@ body{
 }
 
 .main-header{
+    z-index: 30;
+    width: 100vw;
     background-color: #EAC926;
     padding: 20px;
+    position: fixed;
+    top: 0;
 
+}
+
+.buscador{
+    display: none;
 }
 
 .logo{
@@ -22,6 +30,7 @@ body{
 .copy-header{
     font-weight: 400;
     text-align: center;
+    padding: 20px;
 }
 
 .hamburguer-button{
@@ -54,6 +63,61 @@ body{
     display: none;
 }
 
+.formulario-alta{
+    padding: 20px 15px;
+    margin-top: 240px;
+}
+
+.formulario-login{
+    padding: 20px 15px;
+    margin-top: 240px;
+}
+
+.control-formaulario{
+    margin-bottom: 15px;
+}
+.login-formaulario{
+    margin-bottom: 15px;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.login-formulario label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+
+.login{
+    width: 100%;
+    padding: 8px;
+}
+
+.boton-formulario{
+    background-color: indianred;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.boton-login{
+    background-color: indianred;
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
 @media(min-width: 768px){
     .main-header-top-bar{
         /* esto es para ver el contorno que voy a modificar del borde
@@ -78,6 +142,9 @@ body{
     }
     .main-navbar li{
         margin: 0 5px;
+    }
+    .buscador{
+        display: inline-block;
     }
 }
 
@@ -104,6 +171,7 @@ footer i{
 }
 .list-articles{
     display: flex;
+    margin-top: 240px;
 }
 main{
     display: flex;
@@ -127,24 +195,30 @@ main{
     align-items: center;
     justify-content: space-around;
     background-color: white;
-    margin: 10px 0;
+    margin: 10px;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
 }
 
 .camion{
+    position: relative;
+    right: 2vw;
+    bottom: -30px;
+    z-index: 10;
     color: green;
     border: 1px solid green;
     padding: 1em;
     border-radius: 50%;   
 }
 
-.sub-articulo{
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-}
-
 
 footer{
     background-color: white;
+}
+
+.pie{
+    text-align:center;
+    padding: 5px;
 }
 
 nav{
@@ -161,6 +235,9 @@ nav{
     .descripcion{
         display: contents;
     }
+    .articulo{
+        display: inline-block;
+    }
     main .articulo{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
@@ -170,6 +247,10 @@ nav{
 
     .burger-menu{
         display: none;
+    }
+
+    .buscador{
+        display: inline-block;
     }
 }
 
@@ -186,6 +267,9 @@ nav{
     }
     .burger-menu{
         display: none;
+    }
+    .buscador{
+        display: inline-block;
     }
 }
 
@@ -216,4 +300,12 @@ nav{
     .logo{
         width: 250px;
     }
+}
+.carta{
+    padding: 10px;
+}
+.contenedor-cartas{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
 }
