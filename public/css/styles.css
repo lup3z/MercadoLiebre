@@ -198,6 +198,13 @@ footer{
     padding: 5px;
 }
 
+
+
+.pie-icon:hover{
+    color: blue;
+}
+
+
 nav{
     display: none;
 }
