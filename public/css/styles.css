@@ -180,7 +180,7 @@ main{
     right: -150px;
 }
 
-.truck-icon:hover{
+.camion:hover{
     transform: rotate(-90deg);
 }
 
